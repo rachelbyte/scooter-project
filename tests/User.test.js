@@ -17,7 +17,7 @@ describe('The User class properties', () => {
 
     test('the age property', () => {
 
-    expect(rachel.age).toEqual(User.age)
+    expect(rachel.age).toEqual(23)
 
     })
 
