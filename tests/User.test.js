@@ -1,9 +1,23 @@
 const User = require('../src/User')
 
-// User tests here
+describe('The User class properties', () => {
 
-// test username
+    test ('the username property', () => {
 
-// test password
+        expect(User.username).toBe(username)
 
-// test age
+    })
+
+    test('the password property', () => {
+
+    expect(User.password).toBe(password)
+
+    }) 
+
+    test('the age property', () => {
+
+    expect(User.age).toEqual(User.age)
+
+    })
+
+})

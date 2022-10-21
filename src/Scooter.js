@@ -14,7 +14,7 @@ rent () {
   if (this.isBroken === false && this.charge > 20) {
 
     console.log("Enjoy the ride!")
-  } else if (this.charg <= 20) {
+  } else if (this.charge <= 20) {
 
 throw new Error('Scooter low on battery, please charge.')
 
