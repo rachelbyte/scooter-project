@@ -42,8 +42,8 @@ describe('Scooter methods', () => {
   test('the rent method', () => {
 
   expect(rent()).toBe("Enjoy the ride!")
-  expect(rent().toThrow('Scooter low on battery, please charge.'))
-  expect(rent().toThrow("Scooter is broken, please send a repair request."))
+  expect(rent()).toThrow('Scooter low on battery, please charge.')
+  expect(rent()).toThrow("Scooter is broken, please send a repair request.")
 
   })
 
@@ -63,7 +63,7 @@ describe('Scooter methods', () => {
 
     await scoot.requestRepair(); // wait for it to be repaired
 
-    expect(newscoot.requestRepair).toBe("Repair complete")
+    expect(scoot.requestRepair).toBe("Repair complete")
     expect(Scooter.isBroken).toBe(false)
 
 
@@ -74,7 +74,7 @@ describe('Scooter methods', () => {
   test("charge", async () => {
     const scooter = new Scooter();
     await scooter.charge(); // we need to wait for the charge!
-    expect(newScooter.charge).toBe(100);
+    expect(scooter.charge).toBe(100);
 });
 
 })
