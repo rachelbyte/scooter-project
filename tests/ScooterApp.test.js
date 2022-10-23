@@ -68,8 +68,9 @@ test('if the user has already been registered', () => {
 
 describe('the login function', () => {
 
-expect(login(username, password)).toBe("User has logged in successfully")
-expect(login(username, password)).toThrow("Username or password is incorrect.")
+    let rachel = new User ("scratchie99", "aline")
+expect(ScooterApp.login(rachel.username, rachel.password)).toBe("User has logged in successfully")
+expect(ScooterApp.login(username, password)).toThrow("Username or password is incorrect.")
 
 
 })
